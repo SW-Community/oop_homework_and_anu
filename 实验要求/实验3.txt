@@ -1,0 +1,33 @@
+1、参照p106定义Clock类
+要求：
+a. 类内定义showTime()函数
+b. 类外定义setTime()函数，并将setTime()函数声明为带默认参数值的函数，三个参数的默认值都为8
+c. 主函数中生成一个时钟对象，并为其设置时间和显示时间
+d. 主函数中生成第二个时钟对象，并为其设置时间（不提供时刻）和显示时间
+
+
+
+2、定义一个CPU类
+要求：
+属性变量（私有的 private）：
+a、枚举类型CPU_Rank变量表示cpu的型号（枚举类型CPU_Rank在类外定义，其元素为i3，i5，i7，i9）；
+b、整型变量frequency表示cpu频率
+c、浮点型变量voltage表示cpu电压
+
+功能函数（公有 public）：
+a、CPU_Rank GetRank()，用于返回cpu型号
+b、int GetFrequency()函数，用于返回频率值
+c、float GetVoltage()函数，用于返回电压值
+d、SetRank(CPU_Rank r)，用于设置类中的CPU_Rank变量
+e、SetFrequency(int f)，用于设置类中的frequency变量
+f、SetVoltage(float v)，用于设置类中的Voltage变量
+g、Print()，用于输出属性值
+h、Run() 输出"CPU开始运行!" 
+i、Stop() 输出"CPU停止运行!"
+注意：三个Get函数只返回值，不输出值
+
+在主函数中
+创建cpu对象
+             （1）调用cpu对象的三个Set成员函数分别为cpu的三个参数赋值，调用三个Get函数得到三个参数值。
+             （2）调用cpu对象的Print()函数，输出参数值。
+             （3）调用cpu对象的Run()和Stop()函数。

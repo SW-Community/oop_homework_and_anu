@@ -1,0 +1,14 @@
+实验要求：
+
+
+基于课本习题p250 6-24，自行构建字符串类MyString，实现：
+
+1、定义MyString append (const char *s); 将字符串s添加在本串尾
+
+2、定义MyString & insert (unsigned int i, const char *s); 将字符串s插入在本串中位置i之前
+
+3、定义MyString substr (unsigned int i, unsigned int n); 取子串，取本串中位置i开始的n个字符，构成新的MyString对象作为返回值
+
+
+创建字符串"jisuanjizhuanye****ruanjian"（*表示不固定的数字）
+将数字子串取出，分别并放在原串的“zhuanye”前面和最后，组成两个个新的字符串输出在屏幕上

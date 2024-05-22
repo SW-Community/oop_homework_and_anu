@@ -1,0 +1,68 @@
+实验要求：
+
+1. 新建RAM类
+
+（1）属性
+     
+     枚举类型RAM_Rank变量表示内存型号（与cpu型号类似，其元素为DDR，DDR2，DDR3）；
+     int Memory（内存大小）；
+     float frequency;
+
+（2）操作（函数）
+
+     构造函数、复制构造函数、析构函数与CPU类对应一致
+     
+     RAM_Rank GetRank()
+     float GetFrequency()
+     int GetMemory()
+
+     void SetRank(RAM_Rank r)
+     void SetFrequency(float f)
+     void SetMemory(int m)
+
+     void Print() 用于输出RAM类的三个成员数据值（同CPU类中的Print()函数）
+     void Run() 输出"RAM开始运行!"
+     void Stop() 输出"RAM停止运行!"
+
+2. 新建COMPUTER类
+
+（1）成员对象cpu, ram, int price
+（2）成员函数
+
+     默认构造函数，输出"默认构造了一个COMPUTER!";
+
+     带形参的初始式的构造函数（将cpu和ram类对象，以及价格作为参数），输出"初始化构造了一个COMPUTER!";
+
+
+     复制构造函数,输出”调用COMPUTER的复制构造函数“;
+
+     析构函数输出"正在删除COMPUTER对象!";
+
+
+     void SetComputer(形参)，调用cpu与ram对象的set函数，以及设置COMPUTER的价格；
+
+
+     void Print() 调用cpu和ram两个对象的Print()，输出对应的参数值以及COMPUTER的price；
+     void Run() 调用cpu和ram两个对象的Run，并输出"COMPUTER开始运行!"；
+     void Stop() 调用cpu和ram两个对象的Stop，并输出"COMPUTER停止运行!"；
+
+3. 主函数
+
+
+创建CPU和RAM的对象mycpu（i5，2400，2.8）和myram（DDR3，8，2.4）；
+用以mycpu和myram作为参数的方式创建COMPUTER对象computer1；
+显示computer1的属性
+运行computer1的Run函数
+运行computer1的Stop函数
+
+利用computer1来复制构造一个新的对象computer2；
+显示computer2的属性
+
+调用computer2的SetComputer函数，重新设置computer2的属性
+显示computer2的属性
+
+
+
+
+
+ 

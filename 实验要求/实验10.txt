@@ -1,0 +1,25 @@
+1. vehicle类中增加数据成员 float price
+
+2. 增加bicycle类公有继承vehicle，其中，
+
+数据成员：string material
+
+成员函数：
+
+默认构造函数和带形参的构造函数，函数体内分别输出"The bicycle has been constructed by default constructor"和"The bicycle has been constructed"；
+
+析构函数函数体内"The bicycle has been deconstructed"；
+
+void Pring() 输出bicycle类的所有属性值
+void Run() 输出"The bicycle is running!"；	
+void Stop() 输出"The bicycle has stopped!"
+
+4. motorcycle类公有多继承自motorcar和bicycle类
+
+5. 参照P264定义fun函数，参数为vehicle类的指针，通过指针调用print()、Run()和Stop()函数
+
+6. 主程序内声明vehicle类的指针*p，定义4个类的对象并且初始化，分别将指针指向4个对象后，以指针为实参调用fun函数。
+
+
+注：修改相关类的构造函数
+

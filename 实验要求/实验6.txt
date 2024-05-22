@@ -1,0 +1,36 @@
+实验要求：
+
+
+
+1. 在CPU和RAM两个类中增加int price成员，并修改构造函数和复制构造函数增加对price的初始化
+
+2. 修改两个类的print函数增加对price的输出
+
+3. COMPUTER类
+
+（1）声明COMPUTER是CPU和RAM的友元类
+   
+（2）增加静态变量static int count以统计computer个数（统计个数仿照书中Point类的例子，即在构造函数中处理），定义静态函数Showcount()用于输出数量
+
+（3）void Setprice(2个参数)函数设置价格price（直接对CPU和RAM两个类的price赋值，并设置自己的price=这两个类的price之和）
+
+（4）修改print函数增加对price的输出
+
+
+4. 主函数
+
+
+生成各个对象时注意提供价格的初始值；
+
+输出computer数量初始值；
+
+每生成一个computer对象就输出count值（直接通过类用静态函数）；
+
+computer3调用Setprice(,)设置价格；
+
+输出修改后的价格
+
+
+
+
+

@@ -1,0 +1,26 @@
+实验要求：
+
+
+1、把三个类用多文件结构方法表示，即类的声明在.h中，类中函数的实现在.cpp中，main函数在main.cpp中实现
+
+   注意：在每个类的.h文件中，声明类之前要加上#ifndef ... #define ... #endif (教材p176)
+
+
+2、仿照书中例子，将所有类中不会为类的数据成员赋值的函数声明为常成员函数（get，print）注意：常成员函数的定义方式
+
+
+3、主函数
+
+创建常CPU和常RAM的对象；
+
+用带参数的方式（将常CPU和常RAM对象作为参数）创建常COMPUTER对象computer1；（注意需要改变COMPUTER类中参数为CPU和RAM的构造函数，形参为常引用） 
+
+输出computer1的属性
+尝试用computer1调用任何非常函数
+
+生成新的COMPUTER常对象computer2，并将computer1赋给computer2（注意要实现这个功能，需要更改COMPUTER类的复制构造函数，形参为常引用；在CPU和RAM中也要更改复制构造函数，形参变为常引用）
+
+输出computer2的属性
+尝试修改computer2的价格
+
+
